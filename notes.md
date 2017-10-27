@@ -20,4 +20,10 @@ class Square extends React.Component {
 
 # Benefit of Immutability in React
 * Comes when building simple pure components
-* Since immutable data can more easily determine if changes have been made -> helps to determine when component requires re-rendering 
+* Since immutable data can more easily determine if changes have been made -> helps to determine when component requires re-rendering
+
+# Storing Game History
+* Already creating a new ```squares``` array each time a move is made -> immutable
+
+# Misc
+* You can set up initial state by adding a constructor to class
