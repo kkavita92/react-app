@@ -22,8 +22,13 @@ class Square extends React.Component {
 * Comes when building simple pure components
 * Since immutable data can more easily determine if changes have been made -> helps to determine when component requires re-rendering
 
-# Storing Game History
-* Already creating a new ```squares``` array each time a move is made -> immutable
+# Keys
+* When you render a list of items, React stores some info about each item in list
+* If you render a component that has state, state needs to be stored
+* When you update that list, React needs to determine what has changed
+* For that purpose, React asks you to specify a key property on each element in a list to differentiate each component from its siblings  --> if items corresponds to database objects, database ID would be a good choice
+* React uses key automatically while deciding which children to update
+* No way for a component to inquire about its own key BUT keys tell React about identity of each component so that it can maintain state across re-renders.
 
 # Misc
 * You can set up initial state by adding a constructor to class
